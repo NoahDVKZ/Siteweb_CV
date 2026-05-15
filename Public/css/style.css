@@ -1,0 +1,400 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500&family=DM+Serif+Display&display=swap');
+
+:root {
+  --bg: #0e0e0e;
+  --surface: #161616;
+  --surface2: #1e1e1e;
+  --border: rgba(255,255,255,0.08);
+  --border-hover: rgba(255,255,255,0.16);
+  --text: #f0ede8;
+  --muted: #888;
+  --accent: #c8a96e;
+  --accent-glow: rgba(200, 169, 110, 0.15);
+  --accent2: #7eb8c9;
+  --tag-high: rgba(200,169,110,0.12);
+  --tag-mid: rgba(255,255,255,0.06);
+  --tag-low: rgba(255,255,255,0.03);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { scroll-behavior: smooth; background: var(--bg); }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/*
+/////////////////////////////////////////////////////////////////////// 
+/////////////////////////// MAIN PAGE /////////////////////////
+///////////////////////////////////////////////////////////////////////*/
+
+.MainPage body { background: var(--bg); }
+
+.MainPage .layout {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 3rem 2rem 6rem;
+}
+
+.MainPage .header-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.MainPage .profile-photo {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid var(--accent);
+  box-shadow: 0 0 24px var(--accent-glow);
+  flex-shrink: 0;
+}
+
+.MainPage .profile-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.MainPage .header-info h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 2rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+}
+
+.MainPage .header-info .subtitle {
+  font-size: 0.9rem;
+  color: var(--muted);
+  margin-bottom: 1.2rem;
+}
+
+.MainPage .contact-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.MainPage .contact-grid a { color: var(--accent); }
+
+.MainPage .card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.6rem 1.8rem;
+  margin-bottom: 1rem;
+  transition: border-color 0.2s;
+}
+
+.MainPage .card:hover { border-color: var(--border-hover); }
+
+.MainPage .card h2 {
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 1rem;
+}
+
+.MainPage .card p {
+  font-size: 0.9rem;
+  color: #bbb;
+  line-height: 1.75;
+  margin-bottom: 0.5rem;
+}
+
+.MainPage .skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: 0.25rem;
+}
+
+.MainPage .skill-label {
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-top: 1rem;
+  margin-bottom: 0.4rem;
+}
+
+.MainPage .skill-tag {
+  background: var(--tag-high);
+  color: var(--accent);
+  border: 1px solid rgba(200,169,110,0.2);
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 0.28rem 0.7rem;
+  border-radius: 999px;
+}
+
+.MainPage .skill-tag.mid {
+  background: var(--tag-mid);
+  color: #ccc;
+  border: 1px solid var(--border);
+}
+
+.MainPage .skill-tag.low {
+  background: var(--tag-low);
+  color: var(--muted);
+  border: 1px solid rgba(255,255,255,0.04);
+}
+
+.MainPage .nav-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.MainPage .nav-card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 1.4rem 1.6rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: border-color 0.2s, background 0.2s;
+  color: var(--text);
+}
+
+.MainPage .nav-card:hover {
+  border-color: var(--accent);
+  background: var(--accent-glow);
+  text-decoration: none;
+}
+
+.MainPage .nav-card .nav-label {
+  font-size: 0.7rem;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 0.3rem;
+}
+
+.MainPage .nav-card .nav-title {
+  font-weight: 500;
+  font-size: 0.9rem;
+  color: var(--text);
+}
+
+.MainPage .nav-card .arrow {
+  font-size: 1.1rem;
+  color: var(--accent);
+}
+
+.MainPage .objectif-card {
+  border-left: 2px solid var(--accent);
+  border-radius: 0 14px 14px 0;
+}
+
+/*
+/////////////////////////////////////////////////////////////////////// 
+/////////////////////////// INNER PAGES /////////////////////////
+///////////////////////////////////////////////////////////////////////*/
+
+.ExperiencePage body,
+.FormationPage body { background: var(--bg); }
+
+.ExperiencePage .layout,
+.FormationPage .layout {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 3rem 2rem 6rem;
+}
+
+.ExperiencePage .back-link,
+.FormationPage .back-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin-bottom: 2.5rem;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.ExperiencePage .back-link:hover,
+.FormationPage .back-link:hover {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.ExperiencePage .page-title,
+.FormationPage .page-title {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.9rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 0.4rem;
+}
+
+.ExperiencePage .page-subtitle,
+.FormationPage .page-subtitle {
+  font-size: 0.88rem;
+  color: var(--muted);
+  margin-bottom: 2.5rem;
+}
+
+.ExperiencePage .timeline,
+.FormationPage .timeline {
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.ExperiencePage .timeline::before,
+.FormationPage .timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 8px;
+  bottom: 0;
+  width: 1px;
+  background: var(--border);
+}
+
+.ExperiencePage .item,
+.FormationPage .item {
+  position: relative;
+  padding-left: 1.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.ExperiencePage .item::before,
+.FormationPage .item::before {
+  content: '';
+  position: absolute;
+  left: -1.5rem;
+  top: 8px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 10px var(--accent-glow);
+  transform: translateX(-3px);
+}
+
+.ExperiencePage .item:last-child,
+.FormationPage .item:last-child { padding-bottom: 0; }
+
+.ExperiencePage .item-header,
+.FormationPage .item-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 0.2rem;
+}
+
+.ExperiencePage .item-title,
+.FormationPage .item-title {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.ExperiencePage .item-date,
+.FormationPage .item-date {
+  font-size: 0.78rem;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.ExperiencePage .item-subtitle,
+.FormationPage .item-subtitle {
+  font-size: 0.82rem;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  font-weight: 500;
+}
+
+.ExperiencePage .item-desc,
+.FormationPage .item-desc {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.65;
+}
+
+.ExperiencePage .item ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin-top: 0.5rem;
+}
+
+.ExperiencePage .item ul li {
+  font-size: 0.85rem;
+  color: #aaa;
+  padding-left: 1rem;
+  position: relative;
+  line-height: 1.65;
+}
+
+.ExperiencePage .item ul li::before {
+  content: '–';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  opacity: 0.6;
+}
+
+.ExperiencePage .badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.85rem;
+}
+
+.ExperiencePage .badge {
+  background: var(--tag-high);
+  color: var(--accent);
+  border: 1px solid rgba(200,169,110,0.2);
+  font-size: 0.72rem;
+  font-weight: 500;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+}
+
+@media (max-width: 600px) {
+  .MainPage .layout,
+  .ExperiencePage .layout,
+  .FormationPage .layout {
+    padding: 1.5rem 1rem 4rem;
+  }
+
+  .MainPage .header-grid {
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+  }
+
+  .MainPage .nav-grid { grid-template-columns: 1fr; }
+
+  .MainPage .header-info h1 { font-size: 1.6rem; }
+
+  .ExperiencePage .page-title,
+  .FormationPage .page-title { font-size: 1.5rem; }
+}

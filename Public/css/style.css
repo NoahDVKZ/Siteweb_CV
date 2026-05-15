@@ -114,10 +114,10 @@ a:hover { text-decoration: underline; }
 }
 
 .MainPage .card p {
-  font-size: 0.9rem;
-  color: #bbb;
-  line-height: 1.75;
-  margin-bottom: 0.5rem;
+  font-size:0.8rem; 
+  color:var(--muted); 
+  margin-top:1rem; 
+  margin-bottom:0.5rem;
 }
 
 .MainPage .skills-row {

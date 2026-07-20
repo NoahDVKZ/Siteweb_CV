@@ -1,13 +1,4 @@
-const birthDate = new Date(2004, 1, 25);
-const today = new Date();
-
-let age = today.getFullYear() - birthDate.getFullYear();
-const hasHadBirthday = today >= new Date(today.getFullYear(), birthDate.getMonth(), birthDate.getDate());
-if (!hasHadBirthday) age--;
-
-const ageEl = document.getElementById("age");
-if (ageEl) ageEl.textContent = `${age} ans · 25 février 2004`;
-
+// Animation d'apparition au scroll (fade-in + translation)
 const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {

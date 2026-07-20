@@ -3,46 +3,53 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Formations – Della Valle Noah</title>
+  <title data-i18n="form.pageTitle">Formations – Della Valle Noah</title>
   <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/translations.js" defer></script>
+  <script src="../js/i18n.js" defer></script>
   <script src="../js/code.js" defer></script>
 </head>
 <body>
 
+  <div class="lang-switcher" role="group" aria-label="Choix de la langue / Language choice">
+    <button type="button" class="lang-option" data-lang="fr">FR</button>
+    <button type="button" class="lang-option" data-lang="en">EN</button>
+  </div>
+
   <div class="layout">
 
-    <a href="../../index.html" class="back-link">← Retour à l'accueil</a>
+    <a href="../../index.html" class="back-link" data-i18n="common.backLink">← Retour à l'accueil</a>
 
-    <h1 class="page-title">Formations & études</h1>
+    <h1 class="page-title" data-i18n="form.heading">Formations & études</h1>
     <p class="page-subtitle">Della Valle Noah</p>
 
     <div class="timeline">
 
       <div class="item">
         <div class="item-header">
-          <span class="item-title">Bachelier en Informatique</span>
-          <span class="item-date">2023 – en cours</span>
+          <span class="item-title" data-i18n="form.item1Title">Bachelier en Informatique</span>
+          <span class="item-date"> 2023 – 2026</span>
         </div>
         <div class="item-subtitle">Haute École de la Province de Liège</div>
-        <p class="item-desc">Option : développement d'applications.</p>
+        <p class="item-desc" data-i18n="form.item1Desc">Option : développement d'applications.</p>
       </div>
 
       <div class="item">
         <div class="item-header">
-          <span class="item-title">CESS – Certificat d'Études Secondaires Supérieures</span>
+          <span class="item-title" data-i18n="form.item2Title">CESS – Certificat d'Études Secondaires Supérieures</span>
           <span class="item-date">2016 – 2023</span>
         </div>
         <div class="item-subtitle">Collège Sainte-Véronique – Liège</div>
-        <p class="item-desc">Études secondaires générales – option économie.</p>
+        <p class="item-desc" data-i18n="form.item2Desc">Études secondaires générales – option économie.</p>
       </div>
 
       <div class="item">
         <div class="item-header">
-          <span class="item-title">CEB – Certificat d'Études de Base</span>
+          <span class="item-title" data-i18n="form.item3Title">CEB – Certificat d'Études de Base</span>
           <span class="item-date">2007 – 2016</span>
         </div>
         <div class="item-subtitle">École Primaire Saint-Joseph – Awans</div>
-        <p class="item-desc">Études primaires générales.</p>
+        <p class="item-desc" data-i18n="form.item3Desc">Études primaires générales.</p>
       </div>
 
     </div>

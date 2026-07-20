@@ -3,11 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CV – Della Valle Noah</title>
+  <title data-i18n="main.pageTitle">CV – Della Valle Noah</title>
   <link rel="stylesheet" href="./Public/css/style.css" />
+  <script src="./Public/js/translations.js" defer></script>
+  <script src="./Public/js/i18n.js" defer></script>
   <script src="./Public/js/code.js" defer></script>
 </head>
 <body>
+
+  <div class="lang-switcher" role="group" aria-label="Choix de la langue / Language choice">
+    <button type="button" class="lang-option" data-lang="fr">FR</button>
+    <button type="button" class="lang-option" data-lang="en">EN</button>
+  </div>
 
   <div class="layout">
 
@@ -16,12 +23,12 @@
         <img src="./Public/img/pdp.png" alt="Photo de profil de Noah Della Valle" />
       </div>
       <div class="header-info">
-        <h1>Étudiant en informatique – option développement d'applications</h1>
+        <h1 data-i18n="main.heading">Bachelier en informatique avec Distinction – option développement d'applications</h1>
         <p class="subtitle">Della Valle Noah</p>
         <div class="contact-grid">
           <span id="age"></span>
-          <span>Xhendremaël, Belgique</span>
-          <span>Permis B · véhicule</span>
+          <span data-i18n="main.location">Xhendremaël, Belgique</span>
+          <span data-i18n="main.permit">Permis B · véhicule</span>
           <a href="mailto:noahdellavalle25@gmail.com">noahdellavalle25@gmail.com</a>
           <span>+32 (0)499 62 31 73</span>
         </div>
@@ -31,14 +38,13 @@
     <main>
 
       <div class="card">
-        <h2>À propos</h2>
-        <p>Actuellement en fin de cycle de mon bachelier en Informatique, je suis à la recherche d'un emploi afin de commencer dès la réception de mon diplôme.</p>
-        <p>À côté de l'informatique, j'aime la natation et l'escalade, ce qui me permet de rester actif. Je parle français (ma langue maternelle) et anglais à un niveau B2.</p>
-      </div>
+        <h2 data-i18n="main.aboutTitle">Qui suis-je ?</h2>
+        <p data-i18n="main.aboutP1">Je suis un jeune développeur qui vient de terminer ses études en informatique. J'aime relever des défis, résoudre des problèmes et transformer des idées en solutions concrètes. Lorsqu'un projet m'est confié, je m'y investis pleinement et donne le meilleur de moi-même pour atteindre les objectifs fixés.</p>
+        <p data-i18n="main.aboutP2">Aujourd'hui, je recherche une première opportunité professionnelle où je pourrai mettre à profit mes compétences et ma motivation, tout en contribuant activement aux projets de l'entreprise et en continuant à apprendre auprès de collègues plus expérimentés.</p>      </div>
 
       <div class="card">
-        <h2>Compétences</h2>
-        <p>Bonne expérience</p>
+        <h2 data-i18n="main.skillsTitle">Compétences</h2>
+        <p data-i18n="main.skillsHigh">Bonne expérience</p>
         <div class="skills-row">
           <span class="skill-tag">HTML</span>
           <span class="skill-tag">CSS</span>
@@ -49,7 +55,7 @@
           <span class="skill-tag">SQL Server</span>
           <span class="skill-tag">PL/SQL</span>
         </div>
-        <p>Expérience moyenne</p>
+        <p data-i18n="main.skillsMid">Expérience moyenne</p>
         <div class="skills-row">
           <span class="skill-tag mid">Java</span>
           <span class="skill-tag mid">Flutter</span>
@@ -60,35 +66,35 @@
           <span class="skill-tag mid"> Node.js</span>
           <span class="skill-tag mid">C++</span>
         </div>
-        <p>Notions de base</p>
+        <p data-i18n="main.skillsLow">Notions de base</p>
         <div class="skills-row">
           <span class="skill-tag low">Python</span>
           <span class="skill-tag low">R</span>
           <span class="skill-tag low">NoSQL</span>
-          <span class="skill-tag low"> Principe SOLID</span>
+          <span class="skill-tag low" data-i18n="main.skillSolid">Principe SOLID</span>
         </div>
       </div>
 
       <div class="nav-grid">
         <a href="Public/html/formation.html" class="nav-card">
           <div>
-            <div class="nav-label">Parcours</div>
-            <div class="nav-title">Formations & études</div>
+            <div class="nav-label" data-i18n="main.navFormationLabel">Parcours</div>
+            <div class="nav-title" data-i18n="main.navFormationTitle">Formations & études</div>
           </div>
           <span class="arrow">→</span>
         </a>
         <a href="Public/html/experience.html" class="nav-card">
           <div>
-            <div class="nav-label">Expériences</div>
-            <div class="nav-title">Expériences professionnelles</div>
+            <div class="nav-label" data-i18n="main.navExperienceLabel">Expériences</div>
+            <div class="nav-title" data-i18n="main.navExperienceTitle">Expériences professionnelles</div>
           </div>
           <span class="arrow">→</span>
         </a>
       </div>
 
       <div class="card objectif-card">
-        <h2>Objectif professionnel</h2>
-        <p>Devenir développeur full-stack et approfondir mon expertise en bases de données.</p>
+        <h2 data-i18n="main.objectifTitle">Objectif professionnel</h2>
+        <p data-i18n="main.objectifText">Devenir développeur full-stack approfondir mon expertise en bases de données et en Intelligence Artificielle.</p>
       </div>
 
     </main>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr" class="ProjectPage">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="proj.chatbotPageTitle">Chatbot IA – Della Valle Noah</title>
+  <link rel="stylesheet" href="../css/style.css" />
+  <script src="../js/translations.js" defer></script>
+  <script src="../js/i18n.js" defer></script>
+  <script src="../js/code.js" defer></script>
+</head>
+<body>
+
+  <div class="lang-switcher" role="group" aria-label="Choix de la langue / Language choice">
+    <button type="button" class="lang-option" data-lang="fr">FR</button>
+    <button type="button" class="lang-option" data-lang="en">EN</button>
+  </div>
+
+  <div class="layout">
+
+    <a href="../../index.html" class="back-link" data-i18n="common.backLink">← Retour à l'accueil</a>
+
+    <h1 class="page-title" data-i18n="proj.chatbotHeading">Chatbot IA – Support client</h1>
+    <p class="page-subtitle" data-i18n="proj.chatbotSubtitle">Tele-Naro · Stage &amp; travail de fin d'études — Fév. 2026 – Mai 2026</p>
+
+    <div class="badges">
+      <span class="badge">C# ASP.NET</span>
+      <span class="badge">Mistral AI</span>
+      <span class="badge">RAG</span>
+      <span class="badge">Base vectorielle</span>
+      <span class="badge">SQL Server</span>
+      <span class="badge">Prompt engineering</span>
+    </div>
+
+    <div class="project-desc-block">
+      <p class="project-desc" data-i18n="proj.chatbotDesc1">Création et déploiement d'un chatbot d'assistance IA dans une application web centralisant des données clients, RAG, une base de données vectorielle, un prompt système, la mise en place d'un rate limiter, un web service de communication, et l'utilisation d'outils d'agents IA pour effectuer des recherches dans une bibliothèque contenant toute la documentation ainsi que les pages du site web de l'entreprise.</p>
+      <p class="project-desc" data-i18n="proj.chatbotDesc2">Mise en place de liens dans la réponse du chatbot, pour qu'il cite ses sources (les documents en question) et que l'utilisateur n'ait qu'à cliquer dessus pour ouvrir le document d'où proviennent les informations fournies par le chatbot.</p>
+      <p class="project-desc" data-i18n="proj.chatbotDesc3">Sauvegarde des conversations par utilisateur dans une base de données SQL, suivi de la consommation de tokens par utilisateur, mise en place d'une limite mensuelle de consommation par utilisateur avec un JOB de réinitialisation mensuel.</p>
+      <p class="project-desc" data-i18n="proj.chatbotDesc4">Et tout ceci a été réalisé pour mon travail de fin d'études.</p>
+    </div>
+
+    <div class="project-video-block">
+      <div class="section-label" data-i18n="proj.videoLabel">Démonstration</div>
+      <video class="project-video" controls preload="metadata" poster="../img/irisChatbot.png">
+        <source src="../video/chatbotDemo.mp4" type="video/mp4">
+        <p data-i18n="proj.videoFallback">Ton navigateur ne prend pas en charge la lecture vidéo intégrée.</p>
+      </video>
+    </div>
+
+  </div>
+
+</body>
+</html>

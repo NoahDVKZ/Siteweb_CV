@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title data-i18n="main.pageTitle">CV – Della Valle Noah</title>
-  <link rel="stylesheet" href="./Public/css/style.css" />
-  <script src="./Public/js/translations.js" defer></script>
-  <script src="./Public/js/i18n.js" defer></script>
-  <script src="./Public/js/code.js" defer></script>
+  <title data-i18n="main.pageTitle">CV - Della Valle Noah</title>
+  <link rel="stylesheet" href="./public/css/style.css" />
+  <script src="./public/js/translations.js" defer></script>
+  <script src="./public/js/i18n.js" defer></script>
+  <script src="./public/js/code.js" defer></script>
+  <script src="./public/js/carousel.js" defer></script>
 </head>
 <body>
 
@@ -17,13 +18,12 @@
   </div>
 
   <div class="layout">
-
     <header class="header-grid">
       <div class="profile-photo">
-        <img src="./Public/img/pdp.png" alt="Photo de profil de Noah Della Valle" />
+        <img src="./public/img/pdp.png" alt="Photo de profil de Noah Della Valle" />
       </div>
       <div class="header-info">
-        <h1 data-i18n="main.heading">Bachelier en informatique avec Distinction – option développement d'applications</h1>
+        <h1 data-i18n="main.heading">Bachelier en informatique avec Distinction - option développement d'applications</h1>
         <p class="subtitle">Della Valle Noah</p>
         <div class="contact-grid">
           <span id="age"></span>
@@ -36,7 +36,6 @@
     </header>
 
     <main>
-
       <div class="card">
         <h2 data-i18n="main.aboutTitle">Qui suis-je ?</h2>
         <p data-i18n="main.aboutP1">Je suis un jeune développeur qui vient de terminer ses études en informatique. J'aime relever des défis, résoudre des problèmes et transformer des idées en solutions concrètes. Lorsqu'un projet m'est confié, je m'y investis pleinement et donne le meilleur de moi-même pour atteindre les objectifs fixés.</p>
@@ -63,27 +62,54 @@
           <span class="skill-tag mid">C++</span>
           <span class="skill-tag mid">MVC</span>
           <span class="skill-tag mid">.NET</span>
-          <span class="skill-tag mid"> Node.js</span>
-          <span class="skill-tag mid">C++</span>
+          <span class="skill-tag mid">Node.js</span>
         </div>
         <p data-i18n="main.skillsLow">Notions de base</p>
         <div class="skills-row">
           <span class="skill-tag low">Python</span>
           <span class="skill-tag low">R</span>
           <span class="skill-tag low">NoSQL</span>
+          <span class="skill-tag low">C++</span>
           <span class="skill-tag low" data-i18n="main.skillSolid">Principe SOLID</span>
         </div>
       </div>
 
+      <div class="card">
+        <h2 data-i18n="main.projectsTitle">Mes Projets</h2>
+
+        <div class="carousel">
+          <button class="carousel-btn prev" id="projectsPrev" type="button" aria-label="Projet précédent">&#10094;</button>
+
+          <ul class="carousel-track" id="projectsTrack">
+            <li>
+              <a class="project-card" href="public/html/chatbot.html">
+                <div class="project-img-wrap">
+                  <img src="public/img/irisChatbot.png" alt="Chatbot IA Tele-Naro" loading="lazy" onerror="this.onerror=null;this.src='public/img/projects/placeholder.svg'">
+                </div>
+                <div class="project-info">
+                  <h3 data-i18n="main.proj1Title">Tele-Naro - Chatbot IA</h3>
+                  <p data-i18n="main.proj1Desc">Assistant conversationnel basé sur l'API Mistral AI (RAG, embeddings), déployé en production pendant mon stage et utilisé par environ 1000 utilisateurs.</p>
+                  <span class="project-cta" data-i18n="main.projectCta">Voir le projet →</span>
+                </div>
+              </a>
+            </li>
+          </ul>
+
+          <button class="carousel-btn next" id="projectsNext" type="button" aria-label="Projet suivant">&#10095;</button>
+        </div>
+
+        <div class="carousel-dots" id="projectsDots"></div>
+      </div>
+
       <div class="nav-grid">
-        <a href="Public/html/formation.html" class="nav-card">
+        <a href="public/html/formation.html" class="nav-card">
           <div>
             <div class="nav-label" data-i18n="main.navFormationLabel">Parcours</div>
             <div class="nav-title" data-i18n="main.navFormationTitle">Formations & études</div>
           </div>
           <span class="arrow">→</span>
         </a>
-        <a href="Public/html/experience.html" class="nav-card">
+        <a href="public/html/experience.html" class="nav-card">
           <div>
             <div class="nav-label" data-i18n="main.navExperienceLabel">Expériences</div>
             <div class="nav-title" data-i18n="main.navExperienceTitle">Expériences professionnelles</div>
